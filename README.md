@@ -22,13 +22,15 @@ Click the green **"Use this template"** button → **Create a new repository**. 
 
 Then click **Create repository**. This gives you your own private copy — the original stays untouched.
 
-### 3. Download it
+### 3. Copy your repo's link
 
-On your new repository, click the green **"Code"** button → **Download ZIP**, then unzip the folder somewhere on your computer.
+On your new repository, click the green **"Code"** button → on the **HTTPS** tab, copy the web URL (it looks like `https://github.com/<your-user>/your-app.git`).
 
-### 4. Point PAI at the folder
+![Copy the HTTPS link](./docs/https_clone.png)
 
-Open that folder with PAI / Claude Code. Now PAI can see your project.
+### 4. Give PAI the link
+
+Paste that link to PAI / Claude Code and ask it to set the project up — PAI clones it to your computer for you. Now PAI can see your project.
 
 ### 5. Start building
 
