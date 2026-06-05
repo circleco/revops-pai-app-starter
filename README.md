@@ -15,23 +15,5 @@ Circle RevOps and anyone building with PAI who wants a consistent, deploy-ready 
    ![Use this template](./docs/use_template.png)
 
 2. Clone your new repo and build your app. Keep it self-contained: ideally a single static `index.html` (or a small set of files) plus `vercel.json`.
-3. Let Claude Code drive — it reads `CLAUDE.md` and follows the conventions automatically.
+3. Let PAI/Claude Code drive — it reads `CLAUDE.md` and follows the conventions automatically.
 
-## Deploy (Vercel)
-
-```bash
-bunx vercel --prod        # first run links the project, then deploys
-```
-
-- Serve your app at `/` — see the `cleanUrls` + root-rewrite note in `CLAUDE.md` (a common 404 trap).
-- **Access reality check:** a Vercel password or SSO gate protects the *page*, not data your app fetches **client-side** (e.g. a Google Sheet read in the browser). For anything sensitive, restrict the **data source** itself — don't rely on a front-end gate. See `CLAUDE.md` → *Security*.
-- If your Vercel team has Deployment Protection on by default, fresh deploys may **401** until you adjust it. `CLAUDE.md` covers both opening it up and keeping it gated.
-
-## Conventions (the short version)
-
-- **bun / bunx** always — never npm / npx.
-- **TypeScript** over Python for any new scripting.
-- **Static-first** — prefer a no-build static app; reach for a framework only when you actually need one.
-- **No secrets in the repo.** Scan before you commit. Use `.vercelignore` to keep non-app files out of the deploy and `.gitignore` for `.vercel` / `node_modules`.
-
-**Full conventions, deploy recipe, and the hard-won gotchas live in [`CLAUDE.md`](./CLAUDE.md).** Read it first.
