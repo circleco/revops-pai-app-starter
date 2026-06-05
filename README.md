@@ -12,9 +12,15 @@ Go to 👉 **[github.com/circleco/revops-pai-app-starter](https://github.com/cir
 
 ### 2. Make your own copy
 
-Click the green **"Use this template"** button → **Create a new repository**. Give it a name (like `my-campaign-calendar`) and create it. This gives you your own private copy — the original stays untouched.
+Click the green **"Use this template"** button → **Create a new repository**. Give it a name (like `my-campaign-calendar`).
 
 ![Use this template](./docs/use_template.png)
+
+⚠️ **Set the visibility to Private.** This is required — your app may read internal data, so the repository must never be public.
+
+![Set visibility to Private](./docs/private_visibility.png)
+
+Then click **Create repository**. This gives you your own private copy — the original stays untouched.
 
 ### 3. Download it
 

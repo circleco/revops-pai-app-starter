@@ -30,7 +30,7 @@ cd <app-name>
 ```
 
 - Template source: <https://github.com/circleco/revops-pai-app-starter>.
-- `--private` by default (internal tools); `--public` only if the app is meant to be.
+- **Always `--private` — never `--public`.** Repos created from this template MUST be private; they may read internal data. No exceptions.
 - Creating under `circleco` needs org membership + repo-create permission. **No org access?** Create under the user's own account, then grant Rob admin so he can manage/transfer it:
   ```bash
   gh repo create <app-name> --template circleco/revops-pai-app-starter --private --clone
