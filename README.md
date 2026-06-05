@@ -1,19 +1,37 @@
 # RevOps PAI App Starter
 
-Template for building and shipping **small, single-purpose web apps** with PAI / Claude Code — clone, build, deploy to Vercel in minutes.
+A starting point for building small, useful web apps with **PAI** — a calendar from a spreadsheet, a quick dashboard, an internal tracker, a one-page tool.
 
-This is a GitHub **template repository**. It's the home for the kind of quick, focused apps RevOps spins up with AI: a calendar over a Google Sheet, a dashboard, an internal tracker, a one-page tool. Each app you make starts as its own clean repo from this template — *not* a shared folder everyone commits into.
+**You don't need to know how to code.** You bring the idea; PAI builds it, puts it online, and handles all the technical setup for you.
 
-## Who it's for
+## How to use it
 
-Circle RevOps and anyone building with PAI who wants a consistent, deploy-ready starting point instead of re-deciding conventions (and re-learning the same Vercel gotchas) every time.
+### 1. Open the template
 
-## Use it
+Go to 👉 **[github.com/circleco/revops-pai-app-starter](https://github.com/circleco/revops-pai-app-starter)**
 
-1. Click [Use this template](https://github.com/circleco/revops-pai-app-starter#) → Create a new repository (gives you a clean repo, fresh history — no fork link, no secrets, no deploy hooks carried over).
+### 2. Make your own copy
 
-   ![Use this template](./docs/use_template.png)
+Click the green **"Use this template"** button → **Create a new repository**. Give it a name (like `my-campaign-calendar`) and create it. This gives you your own private copy — the original stays untouched.
 
-2. Clone your new repo and build your app. Keep it self-contained: ideally a single static `index.html` (or a small set of files) plus `vercel.json`.
-3. Let PAI/Claude Code drive — it reads `CLAUDE.md` and follows the conventions automatically.
+![Use this template](./docs/use_template.png)
 
+### 3. Download it
+
+On your new repository, click the green **"Code"** button → **Download ZIP**, then unzip the folder somewhere on your computer.
+
+### 4. Point PAI at the folder
+
+Open that folder with PAI / Claude Code. Now PAI can see your project.
+
+### 5. Start building
+
+Just say what you want, in plain words — for example:
+
+> "Build me a calendar that reads this Google Sheet: <link>"
+
+> "Make a dashboard that shows our weekly numbers."
+
+PAI reads the built-in instructions in this template and takes care of the rest: writing the app, putting it online at a live link you can share, and the GitHub/Vercel plumbing behind the scenes. If it ever needs you to log in somewhere or make a choice, it'll ask.
+
+That's it — **you bring the idea, PAI handles the technical part.**
