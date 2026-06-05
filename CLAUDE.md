@@ -165,4 +165,15 @@ Returns nothing → good. Returns a real value → remove it, move it to an env 
 
 ## Git
 
-This is a Circle org repo — use branches/PRs, not direct pushes to `main`. Branch naming: `rw-YYYY-MM-DD-short-description`.
+This is a Circle repo — use branches/PRs, not direct pushes to `main`. Branch naming: `rw-YYYY-MM-DD-short-description`.
+
+**Onboarding request** — when a user pastes a repo URL and asks you to "clone it and configure my Git user settings (name and email)":
+
+```bash
+gh repo clone <url>        # or: git clone <url>
+cd <repo>
+git config user.name  "<their name>"        # per-repo, NOT --global
+git config user.email "<their @circle.co email>"
+```
+
+Ask the user for their name and email if you don't already have them — don't guess. Set them per-repo (no `--global`) so commits in this project carry the right identity without touching their machine-wide config.

@@ -30,7 +30,17 @@ On your new repository, click the green **"Code"** button → on the **HTTPS** t
 
 ### 4. Give PAI the link
 
-Paste that link to PAI / Claude Code and ask it to set the project up — PAI clones it to your computer for you. Now PAI can see your project.
+Open PAI / Claude Code, then paste this message — swap in the link you copied in step 3:
+
+```
+I'd like to work on this GitHub repository: <Project URL>. Could you clone it into my
+local environment and configure my Git user settings for this repository (name and email)
+so I'm ready to start working?
+```
+
+PAI clones the repo to your computer and sets up your Git identity for it. Now PAI can see your project and you're ready to build.
+
+![PAI instructions to clone repo](./docs/clone_instructions.png)
 
 ### 5. Start building
 
